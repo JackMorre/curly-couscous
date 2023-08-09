@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        :root{
+            --btnBackgroundColor: black;
+            --backgroundColor: white;
+            --textColor: black;
+        }
+
+        .dark {
+            --backgroundColor: black;
+            --textColor: white;
+        }
+
+        body {
+            background-color: var(--backgroundColor);
+            color: var(--textColor);
+        }
+
+        .btn {
+            background-color: var(--textColor);
+            padding: 1rem;
+            text-decoration: none;
+            color: var(--backgroundColor);
+            font-size: 16px;
+            font-family: 'Courier New', Courier, monospace;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: grey;
+            color: black;
+        }
+    </style>
+</head>
+<body class="dark">
+    <header>
+        <h1>Mystery Inc</h1>
+        <nav aria-label="primary">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <article>
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et quia ducimus voluptatum ipsum, omnis quidem quibusdam! Praesentium animi obcaecati possimus, at dolores ut porro qui aliquid sapiente officiis? Soluta?</p>
+            </article>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <article>
+                <h3>Article Title</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis atque porro quidem numquam quas quod optio animi perspiciatis ratione pariatur ea voluptate eos quos, enim quis dolore sapiente molestiae necessitatibus.</p>
+            </article>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <article>
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptatum corporis deserunt placeat unde blanditiis doloremque, sint obcaecati sapiente, nam aperiam iure exercitationem maxime sit quibusdam esse cum magnam harum.</p>
+            </article>
+            <a class="btn" href="#">Press me</a>
+            <button class="btn">Press me harders</button>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h2>Navigation!</h2>
+            <nav aria-label="secondary">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+        </nav>
+        </section>
+    </footer>
+</body>
+</html>
